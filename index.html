@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juck Legendary Barber | Shop 7 Independence City, Portmore</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        barberBlue: '#0055ff',
+                        barberDarkBlue: '#0033cc',
+                        barberRed: '#ff1a1a',
+                        barberDark: '#0a0a0c',
+                        barberCard: '#14141a',
+                        barberGray: '#8a8a9e',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-blue {
+            box-shadow: 0 0 25px rgba(0, 85, 255, 0.4);
+        }
+        .glow-red {
+            box-shadow: 0 0 25px rgba(255, 26, 26, 0.4);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(0, 85, 255, 0.6);
+        }
+        .bg-stripes {
+            background: repeating-linear-gradient(
+                45deg,
+                #0a0a0c,
+                #0a0a0c 10px,
+                #14141a 10px,
+                #14141a 20px
+            );
+        }
+    </style>
+</head>
+<body class="bg-barberDark text-white font-sans antialiased selection:bg-barberBlue selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-barberBlue via-barberDarkBlue to-barberRed text-white text-xs md:text-sm font-semibold py-2 px-4 text-center tracking-wider">
+        <i class="fa-solid fa-fire mr-2 text-yellow-300 animate-pulse"></i> "CUT DI BEST ABOVE DI REST" 🇯🇲🔥 • SHOP 7 INDEPENDENCE CITY, PORTMORE
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-barberDark/95 backdrop-blur-md border-b border-barberBlue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="relative w-12 h-12 rounded-full overflow-hidden border-2 border-barberBlue glow-blue group-hover:scale-105 transition-transform">
+                    <img src="logo.png" alt="Juck Legendary Barber Logo" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <span class="font-heading text-xl md:text-2xl font-bold tracking-wider uppercase bg-gradient-to-r from-white via-barberBlue to-barberRed bg-clip-text text-transparent">Juck Legendary</span>
+                    <span class="block text-xs text-barberGray tracking-widest font-semibold uppercase">Certified Barber 💈</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#services" class="hover:text-barberBlue transition-colors">Services</a>
+                <a href="#instagram-feed" class="hover:text-barberBlue transition-colors">Live IG Feed</a>
+                <a href="#about" class="hover:text-barberBlue transition-colors">About</a>
+                <a href="#location" class="hover:text-barberBlue transition-colors">Location</a>
+            </nav>
+
+            <!-- Book WhatsApp CTA Header -->
+            <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20an%20appointment!" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-500 hover:to-emerald-400 text-white font-bold px-5 py-2.5 rounded-full shadow-lg hover:shadow-green-500/50 transition-all transform hover:-translate-y-0.5 text-sm uppercase tracking-wider">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Book via WhatsApp
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-barberCard border-b border-barberBlue/20 px-6 py-6 space-y-4">
+            <a href="#services" class="block font-semibold uppercase hover:text-barberBlue">Services</a>
+            <a href="#instagram-feed" class="block font-semibold uppercase hover:text-barberBlue">Live IG Feed</a>
+            <a href="#about" class="block font-semibold uppercase hover:text-barberBlue">About</a>
+            <a href="#location" class="block font-semibold uppercase hover:text-barberBlue">Location</a>
+            <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20an%20appointment!" target="_blank" class="flex items-center justify-center gap-2 w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl uppercase tracking-wider">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Book via WhatsApp (876-343-6605)
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center bg-stripes overflow-hidden py-16">
+        <!-- Background Glow FX -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-barberBlue/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-barberRed/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-barberBlue/10 border border-barberBlue/30 px-4 py-1.5 rounded-full text-barberBlue font-semibold text-sm uppercase tracking-widest">
+                        <i class="fa-solid fa-crown text-yellow-400"></i> Portmore's Premier Barbershop
+                    </div>
+                    <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-wide leading-none">
+                        Where Style Becomes <span class="bg-gradient-to-r from-barberBlue via-blue-400 to-barberRed bg-clip-text text-transparent">Legendary</span>
+                    </h1>
+                    <p class="text-barberGray text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-medium">
+                        Precision cuts, razor-sharp fades, beard grooming, and top-tier styling. Experience unmatched craftsmanship with Top Barber Juck.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20an%20appointment!" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-barberBlue hover:bg-barberDarkBlue text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl glow-blue transition-all transform hover:-translate-y-1 uppercase tracking-wider text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl text-green-400"></i> Book Appointment Now
+                        </a>
+                        <a href="https://www.instagram.com/jucky_legendary" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 hover:opacity-90 text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl transition-all transform hover:-translate-y-1 uppercase tracking-wider text-base">
+                            <i class="fa-brands fa-instagram text-2xl"></i> View Instagram Profile
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center lg:justify-start gap-6 pt-4 text-sm text-barberGray">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-barberRed"></i>
+                            <span>Shop 7 Independence City, Portmore</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-barberBlue"></i>
+                            <span>876-343-6605</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Logo Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 sm:w-96 h-72 sm:h-96 rounded-3xl p-3 bg-gradient-to-b from-barberBlue via-barberDark to-barberRed glow-blue transform hover:rotate-1 transition-transform duration-500">
+                        <div class="w-full h-full rounded-2xl overflow-hidden bg-barberDark relative flex items-center justify-center">
+                            <img src="logo.png" alt="Juck Legendary Barber Logo" class="w-full h-full object-cover">
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-4 bg-barberDark/90 backdrop-blur border border-barberBlue/50 px-4 py-2 rounded-xl text-center shadow-xl">
+                                <span class="block text-xs text-barberBlue font-bold uppercase tracking-widest">Certified Master</span>
+                                <span class="font-heading text-lg font-bold uppercase">JUCKY_LEGENDARY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-barberCard/50 border-t border-b border-barberBlue/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-barberBlue font-bold uppercase tracking-widest text-sm">Our Expertise</span>
+                <h2 class="font-heading text-4xl sm:text-5xl font-extrabold uppercase tracking-wide">Signature Cuts & Services</h2>
+                <p class="text-barberGray">Get treated like royalty. Choose your service and book instantly via WhatsApp.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-barberCard border border-barberBlue/20 rounded-3xl p-8 hover:border-barberBlue transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-barberBlue/10 border border-barberBlue/30 flex items-center justify-center text-barberBlue text-2xl mb-6 group-hover:bg-barberBlue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold uppercase mb-3">Legendary Haircut & Fade</h3>
+                        <p class="text-barberGray text-sm mb-6">Precision skin fade, taper, or custom haircut styled to perfection with razor edge finish.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                        <span class="font-heading text-xl font-bold text-barberBlue">Top Quality</span>
+                        <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20a%20Haircut%20%26%20Fade." target="_blank" class="bg-barberBlue/20 hover:bg-barberBlue text-barberBlue hover:text-white font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition-all">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-barberCard border border-barberBlue/20 rounded-3xl p-8 hover:border-barberBlue transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-barberBlue/10 border border-barberBlue/30 flex items-center justify-center text-barberBlue text-2xl mb-6 group-hover:bg-barberBlue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold uppercase mb-3">Beard Trim & Hot Towel</h3>
+                        <p class="text-barberGray text-sm mb-6">Crisp beard sculpting, line-up, soothing hot towel treatment, and premium beard oil conditioning.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                        <span class="font-heading text-xl font-bold text-barberBlue">Top Quality</span>
+                        <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20a%20Beard%20Trim%20%26%20Hot%20Towel." target="_blank" class="bg-barberBlue/20 hover:bg-barberBlue text-barberBlue hover:text-white font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition-all">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-barberCard border border-barberBlue/20 rounded-3xl p-8 hover:border-barberBlue transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-barberBlue/10 border border-barberBlue/30 flex items-center justify-center text-barberBlue text-2xl mb-6 group-hover:bg-barberBlue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold uppercase mb-3">The Full VIP Combo</h3>
+                        <p class="text-barberGray text-sm mb-6">Complete haircut & fade, beard grooming, hot towel treatment, and facial enhancements.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                        <span class="font-heading text-xl font-bold text-barberBlue">Best Value</span>
+                        <a href="https://wa.me/18763436605?text=Hello%20Juck,%20I%20would%20like%20to%20book%20The%20Full%20VIP%20Combo." target="_blank" class="bg-barberBlue/20 hover:bg-barberBlue text-barberBlue hover:text-white font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition-all">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE INSTAGRAM SYNC SECTION -->
+    <section id="instagram-feed" class="py-20 bg-barberDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-3">
+                    <div class="inline-flex items-center gap-2 text-pink-500 font-bold uppercase tracking-widest text-sm">
+                        <i class="fa-brands fa-instagram text-xl"></i> Live Feed Synced
+                    </div>
+                    <h2 class="font-heading text-4xl sm:text-5xl font-extrabold uppercase tracking-wide">Latest From @jucky_legendary</h2>
+                    <p class="text-barberGray">When Juck posts on Instagram, it instantly updates here. Fresh cuts straight from the chair!</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="https://www.instagram.com/jucky_legendary" target="_blank" class="inline-flex items-center gap-2 bg-barberCard border border-pink-500/30 hover:border-pink-500 text-white font-bold px-6 py-3 rounded-2xl transition-all uppercase tracking-wider text-sm">
+                        <i class="fa-brands fa-instagram text-pink-500"></i> Follow on Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Elfsight Live Widget -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-58ce6483-2b1d-4498-afeb-675034661a63" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section -->
+    <section id="location" class="py-20 bg-barberCard/50 border-t border-barberBlue/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Location Info -->
+                <div class="space-y-6">
+                    <span class="text-barberBlue font-bold uppercase tracking-widest text-sm">Find The Shop</span>
+                    <h2 class="font-heading text-4xl sm:text-5xl font-extrabold uppercase tracking-wide">Shop Location & Directions</h2>
+                    <p class="text-barberGray text-base">
+                        Conveniently located in Portmore. Click the map link below to open exact directions directly from your phone's navigation app matching Juck's Instagram location.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 bg-barberCard p-4 rounded-2xl border border-white/5">
+                            <div class="w-12 h-12 rounded-xl bg-barberRed/10 text-barberRed flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base uppercase">Address</h4>
+                                <p class="text-barberGray text-sm">Shop 7 Independence City, Portmore, St. Catherine, Jamaica 🇯🇲</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-barberCard p-4 rounded-2xl border border-white/5">
+                            <div class="w-12 h-12 rounded-xl bg-barberBlue/10 text-barberBlue flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base uppercase">Direct Contact & WhatsApp</h4>
+                                <p class="text-barberGray text-sm">876-343-6605</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.app.goo.gl/U38AuyAxRA5cs2iE6?g_st=ic" target="_blank" class="inline-flex items-center gap-3 bg-barberBlue hover:bg-barberDarkBlue text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl glow-blue transition-all uppercase tracking-wider text-sm">
+                            <i class="fa-solid fa-map-location-dot text-xl"></i> Open Location Map (GPS)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map / Visual Box -->
+                <div class="relative rounded-3xl overflow-hidden border-2 border-barberBlue/30 shadow-2xl h-96 bg-barberDark flex flex-col items-center justify-center p-8 text-center bg-stripes">
+                    <div class="absolute inset-0 bg-gradient-to-t from-barberDark via-transparent to-transparent opacity-80"></div>
+                    <div class="relative z-10 space-y-4 max-w-md">
+                        <div class="w-20 h-20 rounded-full bg-barberBlue/20 border-2 border-barberBlue flex items-center justify-center mx-auto text-barberBlue text-3xl glow-blue animate-bounce">
+                            <i class="fa-solid fa-map-pin text-barberRed"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold uppercase">Shop 7 Independence City</h3>
+                        <p class="text-barberGray text-sm">Portmore, St. Catherine, Jamaica</p>
+                        <a href="https://maps.app.goo.gl/U38AuyAxRA5cs2iE6?g_st=ic" target="_blank" class="inline-block bg-white text-barberDark hover:bg-barberBlue hover:text-white font-extrabold px-6 py-3 rounded-xl transition-all uppercase tracking-wider text-xs shadow-lg">
+                            Get Directions <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-barberDark border-t border-barberBlue/20 py-12 text-center text-barberGray text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <div class="flex items-center justify-center space-x-3">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-barberBlue">
+                    <img src="logo.png" alt="Logo" class="w-full h-full object-cover">
+                </div>
+                <span class="font-heading text-xl font-bold uppercase tracking-wider text-white">Juck Legendary Barber</span>
+            </div>
+            <p class="max-w-md mx-auto">"Cut Di Best Above Di Rest" 🇯🇲🔥 Certified Barber located at Shop 7 Independence City, Portmore.</p>
+            <div class="flex items-center justify-center gap-6">
+                <a href="https://www.instagram.com/jucky_legendary" target="_blank" class="text-white hover:text-barberBlue text-xl transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/18763436605" target="_blank" class="text-white hover:text-green-500 text-xl transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/U38AuyAxRA5cs2iE6?g_st=ic" target="_blank" class="text-white hover:text-barberRed text-xl transition-colors"><i class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+            <div class="border-t border-white/5 pt-6 text-xs text-barberGray">
+                &copy; 2026 Juck Legendary Barber. All Rights Reserved. Built for Top Barber Juck.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
